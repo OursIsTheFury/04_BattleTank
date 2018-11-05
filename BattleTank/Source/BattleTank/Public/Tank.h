@@ -24,6 +24,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Setup)
 	void SetTurretReference(UTankTurret* TurretToSet);
 
+	UFUNCTION(BlueprintCallable, Category = Input)
+	void SetThrottle(float Throttle);
+
 	void AimAt(FVector HitLocation);
 
 	UFUNCTION(BlueprintCallable, Category = Firing)
@@ -50,6 +53,10 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = Firing)
 	float ReloadTimeInSeconds = 3.0f;
+
+	// Max force in newtons
+	//UPROPERTY(EditDefaultsOnly)
+	//float TrackMaxDrivingForce = 
 
 	// Local barrel reference for spawning projectiles
 	UTankBarrel* Barrel = nullptr;
