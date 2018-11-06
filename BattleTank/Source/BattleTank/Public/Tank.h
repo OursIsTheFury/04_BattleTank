@@ -24,9 +24,6 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Setup)
 	void SetTurretReference(UTankTurret* TurretToSet);
 
-	UFUNCTION(BlueprintCallable, Category = Input)
-	void SetThrottle(float Throttle);
-
 	void AimAt(FVector HitLocation);
 
 	UFUNCTION(BlueprintCallable, Category = Firing)
