@@ -51,10 +51,6 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = Firing)
 	float ReloadTimeInSeconds = 3.0f;
 
-	// Max force in newtons
-	//UPROPERTY(EditDefaultsOnly)
-	//float TrackMaxDrivingForce = 
-
 	// Local barrel reference for spawning projectiles
 	UTankBarrel* Barrel = nullptr;
 
